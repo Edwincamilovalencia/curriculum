@@ -1,33 +1,35 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
-
+import miCara from './components/imagenes/WhatsApp Image 2023-05-11 at 11.02.58 AM.jpeg'
+import logos from './components/imagenes/Unofficial_JavaScript_logo_2.svg.png'
 
 function PersonalInfo(props) {
   return (
     <div className='information--personal'>
-      <h1>{props.name}</h1>
+      <img className='imagen--picture' src={miCara} alt=' '></img>
+      <h3>{props.name}</h3>
       <p>{props.email}</p>
       <p>{props.phone}</p>
       <p>{props.address}</p>
+      
 
     </div>
   );
 }
-
 function AboutMeDes(props) {
   return (
     <div className='information--aboutMe'>  
       <h4>{props.aboutMe}</h4>
-      
       <p>{props.text}</p>
+      <img className='logos--aplicaciones'
+       src={logos} alt=' '
+       />
     </div>
   );
 }
-
 function Titles(props){
   return(
-    <div className='information--titles'>
+    <div className='information--degrees'>
       <h4>{props.titles}</h4>
       <ul>
         <li><p>{props.degree1}</p></li>
@@ -39,10 +41,9 @@ function Titles(props){
     </div>
   );
 }
-
 function Habilities(props){
   return(
-    <div>
+    <div className='information--habilities'>
       <h4>{props.Habilities}</h4>
       <ul>
         <p>{props.workGroup}</p>
@@ -50,13 +51,11 @@ function Habilities(props){
         <p>{props.collaboration}</p>
       </ul>
     </div>
-
   );
 }
-
 function Languages(props){
   return(
-    <div>
+    <div className='information--languages'>
       <h4>{props.languages}</h4>
       <p>{props.Spanish}</p>
       <p>{props.English}</p>
@@ -64,20 +63,16 @@ function Languages(props){
 
   );
 }
-
-
 const myInfo = {
   name: 'Edwin Camilo Valencia Bustamante',
-  email: 'edcamilo2016@gamil.com',
+  email: 'edcamilo2016@gmail.com',
   phone: '+57 313-5606-342',
   address: 'Manizalez-Caldas-Colombia'
 };
-
 const myinfoAboutMe = {
   aboutMe:'Perfil Personal',
   text:'Estudiante de Ingenieria en sistemas y telecomunicaciones de 5º semestre, con conicimientos en  Python, javascript, html, css, reactjs,Bases de datos, entre otros, con disponibilidad de seguir aprendiendo y trabajar'
   }
-
 const myTitles =
   {
   titles:'Titulos',
@@ -87,20 +82,17 @@ const myTitles =
   school2: 'SENA',
   date: '07-12-2019'
 }
-
 const myInfoHabilities={
   Habilities:'Habilidades',
   workGroup:'Trabajo en equipo',
   responsability:'Responsabilidad',
   collaboration:'Colaboracion'
 }
-
 const myInfoLanguages={
   languages:'Idiomas',
   Spanish:'Ingles : Avanzado',
   English:'Español : Avanzado'
 }
-
 function Curriculum(props) {
   return(
     <div>
@@ -136,7 +128,6 @@ function Curriculum(props) {
     </div>
   );
 }
-
 function App() {
   return (
     <div>
@@ -164,7 +155,6 @@ function App() {
     </div>
   );
 }
-
 export default App;
 
 
