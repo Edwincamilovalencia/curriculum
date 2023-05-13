@@ -3,6 +3,7 @@ import './App.css';
 import miCara from './components/imagenes/WhatsApp Image 2023-05-11 at 11.02.58 AM.jpeg'
 import logos from './components/imagenes/tecnologias.png'
 
+
 function PersonalInfo(props) {
   return (
     <div className='information--personal'>
@@ -11,8 +12,7 @@ function PersonalInfo(props) {
       <p>{props.email}</p>
       <p>{props.phone}</p>
       <p>{props.address}</p>
-      
-
+      <p>{props.ownDescription}</p>
     </div>
   );
 }
@@ -29,6 +29,18 @@ function AboutMeDes(props) {
     </div>
   );
 }
+
+function WorkExperience(props){
+  return(
+    <div className='information--workExperince'>
+      <h4>{props.workExperience}</h4>
+      <hr className='linea--hr1'/>
+      <p>{props.text1}</p>
+      <hr className='linea--hr2'/>
+    </div>
+  );
+}
+
 function Titles(props){
   return(
     <div className='information--degrees'>
@@ -75,7 +87,8 @@ const myInfo = {
   name: 'Edwin Camilo Valencia Bustamante',
   email: 'edcamilo2016@gmail.com',
   phone: '+57 313-5606-342',
-  address: 'Manizalez-Caldas-Colombia'
+  address: 'Manizalez-Caldas-Colombia',
+  ownDescription: 'Apasionado con el constante aprendizaje, con el objetivo de sacar cada proyecto adelante, capaz de dar lo mejor de mi para el bien personal y comun, disfruto de mi crecimiento como persona, capaz de aceptar errores y iniciativa de mejorarlos.'
 };
 const myinfoAboutMe = {
   aboutMe:'Perfil Personal',
@@ -101,6 +114,11 @@ const myInfoLanguages={
   Spanish:'Ingles : Avanzado',
   English:'Español : Avanzado'
 }
+
+const myInfoWorkExperince={
+  workExperience:'Experiencia Laboral',
+  text1:'Actualmente no hay experiencia laboral'
+}
 function Curriculum(props) {
   return(
     <div>
@@ -109,6 +127,7 @@ function Curriculum(props) {
         email={props.email}
         phone={props.phone}
         address={props.address}
+        ownDescription={props.ownDescription}
       />
       <AboutMeDes
         aboutMe={props.aboutMe}
@@ -133,6 +152,10 @@ function Curriculum(props) {
         Spanish={props.Spanish}
         English={props.English}
       />
+      <WorkExperience
+        workExperience={props.workExperience}
+        text1={props.text1}
+      />
     </div>
   );
 }
@@ -144,6 +167,7 @@ function App() {
         email={myInfo.email}
         phone={myInfo.phone}
         address={myInfo.address}
+        ownDescription={myInfo.ownDescription}
         aboutMe={myinfoAboutMe.aboutMe}
         text={myinfoAboutMe.text}
         titles={myTitles.titles}
@@ -159,6 +183,8 @@ function App() {
         languages={myInfoLanguages.languages}
         Spanish={myInfoLanguages.Spanish}
         English={myInfoLanguages.English}
+        workExperience={myInfoWorkExperince.workExperience}
+        text1={myInfoWorkExperince.text1}
       />
     </div>
   );
