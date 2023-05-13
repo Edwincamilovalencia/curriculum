@@ -2,14 +2,27 @@
   background-color: #EAFFD5;
   border: 1px solid #d9d9d9;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 .information--aboutMe{
-  max-width: 80%;
+ 
 }
 .imagen--picture{
   width: 15%;
 }
 .logos--aplicaciones{
-  width: 2%;
+  width: 40%;
+}
+.linea--hr1{
+  margin-top: 1%;
+  border: 1px 
+  solid red; 
+  height: 2px; 
+  width: 70%;
+
+}
+.linea--hr2{
+  height: 5px;
+  width: 50%;
+  background-color: rgb(78, 110, 88);
 }

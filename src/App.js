@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import miCara from './components/imagenes/WhatsApp Image 2023-05-11 at 11.02.58 AM.jpeg'
-import logos from './components/imagenes/Unofficial_JavaScript_logo_2.svg.png'
+import logos from './components/imagenes/tecnologias.png'
 
 function PersonalInfo(props) {
   return (
@@ -20,10 +20,12 @@ function AboutMeDes(props) {
   return (
     <div className='information--aboutMe'>  
       <h4>{props.aboutMe}</h4>
+      <hr className='linea--hr1'/>
       <p>{props.text}</p>
       <img className='logos--aplicaciones'
        src={logos} alt=' '
        />
+       <hr className='linea--hr2'/>
     </div>
   );
 }
@@ -31,6 +33,7 @@ function Titles(props){
   return(
     <div className='information--degrees'>
       <h4>{props.titles}</h4>
+      <hr className='linea--hr1'/>
       <ul>
         <li><p>{props.degree1}</p></li>
         <li><p>{props.school1}</p></li>  
@@ -38,6 +41,7 @@ function Titles(props){
         <li><p>{props.school2}</p></li>   
         <li><p>{props.date}</p></li>   
       </ul>
+      <hr className='linea--hr2'/>
     </div>
   );
 }
@@ -45,11 +49,13 @@ function Habilities(props){
   return(
     <div className='information--habilities'>
       <h4>{props.Habilities}</h4>
+      <hr className='linea--hr1'/>
       <ul>
         <p>{props.workGroup}</p>
         <p>{props.responsability}</p>
         <p>{props.collaboration}</p>
       </ul>
+      <hr className='linea--hr2'/>
     </div>
   );
 }
@@ -57,8 +63,10 @@ function Languages(props){
   return(
     <div className='information--languages'>
       <h4>{props.languages}</h4>
+      <hr className='linea--hr1'/>
       <p>{props.Spanish}</p>
       <p>{props.English}</p>
+      <hr className='linea--hr2'/>
     </div>
 
   );
