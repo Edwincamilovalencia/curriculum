@@ -17,6 +17,7 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-5">
+          <br/>
             <img className="imagen--picture" src={miCara} alt=" " />
             <OfMain className="main--letra" />
           </div>
