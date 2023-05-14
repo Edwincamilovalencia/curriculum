@@ -6,15 +6,13 @@ function Habilities(props){
         <h4>{props.Habilities}</h4>
         <hr className='linea--hr1'/>
         <ul>
-          <p>{props.workGroup}</p>
-          <p>{props.responsability}</p>
-          <p>{props.collaboration}</p>
+          <li><p>{props.workGroup}</p></li>
+          <li><p>{props.responsability}</p></li>
+          <li><p>{props.collaboration}</p></li>
         </ul>
-        <hr className='linea--hr2'/>
       </div>
     );
   }
-
 const myInfoHabilities={
     Habilities:'Habilidades',
     workGroup:'Trabajo en equipo',

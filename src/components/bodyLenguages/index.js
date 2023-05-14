@@ -7,7 +7,7 @@ function Languages(props){
         <hr className='linea--hr1'/>
         <p>{props.Spanish}</p>
         <p>{props.English}</p>
-        <hr className='linea--hr2'/>
+
       </div>
     );
   }

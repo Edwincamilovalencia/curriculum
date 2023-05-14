@@ -12,13 +12,12 @@ function Titles(props){
           <li><p>{props.school2}</p></li>   
           <li><p>{props.date}</p></li>   
         </ul>
-        <hr className='linea--hr2'/>
       </div>
     );
   }
 
 const myTitles ={
-    titles:'Titulos',
+    titles:'Diplomatura',
     degree1: 'Bachiller academico',
     degree2: 'Tecnico en instalaciones electricas residenciales',
     school1: 'Instituto Tecnico Francisco Jose de Caldas',

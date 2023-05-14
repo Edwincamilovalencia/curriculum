@@ -3,7 +3,9 @@ import React from "react";
 function PersonalInfo(props) {
     return (
       <div className='information--personal'>
+        <br/>
         <h3>{props.name}</h3>
+        <br/>
         <p>{props.email}</p>
         <p>{props.phone}</p>
         <p>{props.address}</p>

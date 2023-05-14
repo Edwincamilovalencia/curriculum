@@ -1,26 +1,28 @@
-.container--main{
-  background-color: khaki;
-  width: 50%;
-}
-.imagen--picture{
-  width: 15%;
-}
-.main--letra{
-  text-align: right;
-}
-.logos--aplicaciones{
-  width: 40%;
-}
+
+
+
 .linea--hr1{
   margin-top: 1%;
   border: 1px 
-  solid red; 
+  solid rgb(38, 0, 255); 
   height: 2px; 
   width: 70%;
+}
+.fondo--main{
+  background: linear-gradient(to left, rgb(198, 198, 247), rgb(255, 255, 255));
+}
+.container {
+  background: linear-gradient(to left, rgb(204, 204, 255), rgb(255, 255, 255));
+}
 
-}
-.linea--hr2{
-  height: 5px;
+.imagen--picture {
   width: 50%;
-  background-color: rgb(78, 110, 88);
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+.logos--aplicaciones {
+  width: 50%;
+}
+

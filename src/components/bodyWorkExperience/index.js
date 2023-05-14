@@ -6,14 +6,13 @@ function WorkExperience(props){
         <h4>{props.workExperience}</h4>
         <hr className='linea--hr1'/>
         <p>{props.text1}</p>
-        <hr className='linea--hr2'/>
       </div>
     );
   }  
 
 const myInfoWorkExperience={
     workExperience:'Experiencia Laboral',
-    text1:'Actualmente no hay experiencia laboral'
+    text1:'Actualmente no se cuenta con experiencia laboral'
   }
 
 function CurriculumWorkExperience(props){

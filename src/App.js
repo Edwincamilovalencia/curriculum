@@ -9,28 +9,39 @@ import OfMainWorkExperience from './components/bodyWorkExperience';
 import OfMainHabilities from './components/bodyHabilities';
 import OfMainLenguages from './components/bodyLenguages';
 
+
+
 function App() {
   return (
-    <div>
-      <div className='container--main'>
-        <div class='row'>
-          <div class="col-4"><img className='imagen--picture' src={miCara} alt=' '></img>
-          <OfMain className='main--letra'/>
+    <div className='fondo--main'>
+      <div className="container">
+        <div className="row">
+          <div className="col-5">
+            <img className="imagen--picture" src={miCara} alt=" " />
+            <OfMain className="main--letra" />
           </div>
-        </div>
-      </div>
-      <div className='container--secundary'>
-        <div class='row'>
-          <div class="col-8"><img className='logos--aplicaciones' src={logo} alt=' '></img>
-          <OfMainAboutMeDes/>
-          <OfMainTitles/>
-          <OfMainWorkExperience/>
-          <OfMainHabilities/>
-          <OfMainLenguages/>
+          <div className="col-2"/>
+          <div className="col-5">
+            <div className="row">
+              <OfMainAboutMeDes />
+              <img
+                  className="logos--aplicaciones"
+                  src={logo}
+                  alt=" "
+                />
+              </div>
+              <br/>
+                <OfMainTitles />
+                <br/>
+                <OfMainWorkExperience />
+                <br/>
+                <OfMainHabilities />
+                <br/>
+                <OfMainLenguages />
+              </div>
+            </div>
           </div>
-        </div>
       </div>
-    </div>
   );
 }
 export default App;

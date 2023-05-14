@@ -3,11 +3,11 @@ import React from "react";
 
 function AboutMeDes(props) {
     return (
-      <div className='information--aboutMe'>  
+      <div className='information--aboutMe'>
+        <br/>
         <h4>{props.aboutMe}</h4>
         <hr className='linea--hr1'/>
         <p>{props.text}</p>
-         <hr className='linea--hr2'/>
       </div>
     );
   }
