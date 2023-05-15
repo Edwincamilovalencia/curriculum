@@ -6,9 +6,9 @@ function PersonalInfo(props) {
         <br/>
         <h3>{props.name}</h3>
         <br/>
-        <p>{props.email}</p>
-        <p>{props.phone}</p>
-        <p>{props.address}</p>
+        <p className="negrita--parrafo">{props.email}</p>
+        <p className="negrita--parrafo">{props.phone}</p>
+        <p className="negrita--parrafo">{props.address}</p>
         <p>{props.ownDescription}</p>
       </div>
     );
